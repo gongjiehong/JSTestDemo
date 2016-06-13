@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>这是一个示例html文件</title>
+        <script src="js/md5.js"></script>
+        <script Type='text/javascript'>
+            function sendToken(token) {
+                alert(token);
+                /*这里拿到信息以后就可以到后台做一些肮脏的PY交易了*/
+                return md5(token);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>这里是一段没用的字</h1>
+        
+        <ul class="navigation">
+            <li><a href="https://www.baidu.com">这里是一个正常跳转链接</a></li>
+            <li><a href="https://forclient?textParam=123456">这里是一个带有特殊参数的跳转</a></li>
+            <li><a href="https://forclient?jsonParam=%7B%22user_id%22%3A%20%2210086%22%2C%20%22user_name%22%3A%20%22%E7%A8%8B%E5%BA%8F%E7%8C%BF%E8%80%81%E9%BE%9A%22%2C%20%22action%22%3A%20%22show_info%22%2C%20%22gender%22%3A%20%221%22%2C%20%22age%22%3A%20%2225%22%7D">这里是一个带有json参数的跳转</a></li>
+            <li><a href="https://forclient?jsonParam=%7B%22user_id%22%3A%20%2210086%22%2C%20%22user_name%22%3A%20%22%E7%A8%8B%E5%BA%8F%E7%8C%BF%E8%80%81%E9%BE%9A%22%2C%20%22action%22%3A%20%22get_token%22%2C%20%22gender%22%3A%20%221%22%2C%20%22age%22%3A%20%2225%22%7D">这里还是一个带有json参数的跳转</a></li>
+        </ul>
+        
+    </body>  
+</html>
