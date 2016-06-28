@@ -32,8 +32,35 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         let htmlFilePath = webDirDocumentsPath.stringByAppendingString("/Index.html")
         
         testWebView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath: htmlFilePath)))
+        
+        let rightBarItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(FirstViewController.insertJs))
+        self.navigationItem.rightBarButtonItem = rightBarItem
     }
 
+    func insertJs() {
+        let fileManager = NSFileManager.defaultManager()
+        
+        let documentsPath = NSString(string: fileManager.documentsPath)
+        
+        let webDirDocumentsPath = documentsPath.stringByAppendingPathComponent("HTML")
+        
+        let demoJsPath = webDirDocumentsPath.stringByAppendingString("/js/demo.js")
+        
+        do {
+            let jsString = try String(contentsOfFile: demoJsPath)
+            
+            testWebView.stringByEvaluatingJavaScriptFromString(jsString)
+            
+            let tempstr = testWebView.stringByEvaluatingJavaScriptFromString("change_url_and_load('https://www.taobao.com/')")
+            
+            println(tempstr)
+        }
+        catch {
+            
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,7 +73,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
-
+        println("\(webView.stringByEvaluatingJavaScriptFromString("document.title"))")
     }
     
     func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {

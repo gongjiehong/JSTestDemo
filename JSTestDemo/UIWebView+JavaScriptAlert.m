@@ -41,7 +41,7 @@ static BOOL isEnd = NO;
     
     CGFloat version = [[[UIDevice currentDevice] systemVersion] floatValue];
     if (version >= 7.) {
-        while (isEnd == NO) {
+        while (isEnd == NO) { 
             [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.01f]];
             
         }
