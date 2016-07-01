@@ -49,8 +49,10 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         do {
             let jsString = try String(contentsOfFile: demoJsPath)
             
+            // 注入
             testWebView.stringByEvaluatingJavaScriptFromString(jsString)
             
+            // 调用我们在js中定义的方法
             let tempstr = testWebView.stringByEvaluatingJavaScriptFromString("change_url_and_load('https://www.taobao.com/')")
             
             println(tempstr)

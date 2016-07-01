@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE0A643A1D0EAAF500725DC3 /* UIWebView+JavaScriptAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0A64391D0EAAF500725DC3 /* UIWebView+JavaScriptAlert.m */; };
+		FE2CF0691D23859500A57309 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2CF0681D23859500A57309 /* WebKit.framework */; };
 		FE3F067E1D0E60EC0044706C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F067D1D0E60EC0044706C /* AppDelegate.swift */; };
 		FE3F06801D0E60EC0044706C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F067F1D0E60EC0044706C /* FirstViewController.swift */; };
 		FE3F06821D0E60EC0044706C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F06811D0E60EC0044706C /* SecondViewController.swift */; };
@@ -21,6 +22,7 @@
 		FE0A64371D0EAAF500725DC3 /* JSTestDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSTestDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE0A64381D0EAAF500725DC3 /* UIWebView+JavaScriptAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JavaScriptAlert.h"; sourceTree = "<group>"; };
 		FE0A64391D0EAAF500725DC3 /* UIWebView+JavaScriptAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JavaScriptAlert.m"; sourceTree = "<group>"; };
+		FE2CF0681D23859500A57309 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FE3F067A1D0E60EC0044706C /* JSTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3F067D1D0E60EC0044706C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE3F067F1D0E60EC0044706C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2CF0691D23859500A57309 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		FE3F06711D0E60EC0044706C = {
 			isa = PBXGroup;
 			children = (
+				FE2CF0681D23859500A57309 /* WebKit.framework */,
 				FE3F067C1D0E60EC0044706C /* JSTestDemo */,
 				FE3F067B1D0E60EC0044706C /* Products */,
 			);
