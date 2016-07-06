@@ -16,6 +16,7 @@
 		FE3F06871D0E60EC0044706C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3F06861D0E60EC0044706C /* Assets.xcassets */; };
 		FE3F068A1D0E60EC0044706C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3F06881D0E60EC0044706C /* LaunchScreen.storyboard */; };
 		FE3F06931D0E63B00044706C /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = FE3F06921D0E63B00044706C /* HTML */; };
+		FEB0DB171D2B9C80005732B1 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB0DB161D2B9C80005732B1 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FE3F06891D0E60EC0044706C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE3F068B1D0E60EC0044706C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE3F06921D0E63B00044706C /* HTML */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HTML; sourceTree = "<group>"; };
+		FEB0DB161D2B9C80005732B1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB0DB171D2B9C80005732B1 /* JavaScriptCore.framework in Frameworks */,
 				FE2CF0691D23859500A57309 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +52,7 @@
 		FE3F06711D0E60EC0044706C = {
 			isa = PBXGroup;
 			children = (
+				FEB0DB161D2B9C80005732B1 /* JavaScriptCore.framework */,
 				FE2CF0681D23859500A57309 /* WebKit.framework */,
 				FE3F067C1D0E60EC0044706C /* JSTestDemo */,
 				FE3F067B1D0E60EC0044706C /* Products */,
